@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav ul li {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        nav ul li a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #764ba2;
+        }
+
+        nav ul li.active a {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .content-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-paragraph {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .content-container {
+                padding: 40px 30px;
+            }
+
+            nav ul {
+                gap: 20px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina1.html">pagina 1</a></li>
+            <li class="active"><a href="pagina2.html">pagina 2</a></li>
+            <li><a href="pagina3.html">pagina 3</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <h1 class="page-title">Arte y Creatividad</h1>
+        
+        <div class="accordion mb-4" id="artAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Historia del Arte Contemporáneo
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#artAccordion">
+                    <div class="accordion-body">
+                        El arte contemporáneo ha evolucionado constantemente, reflejando los cambios sociales y culturales de cada época.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Técnicas Artísticas Modernas
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#artAccordion">
+                    <div class="accordion-body">
+                        Los artistas modernos experimentan con nuevas técnicas y materiales, creando obras innovadoras que desafían las convenciones tradicionales.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="content-paragraph">
+            El arte ha sido siempre un reflejo de la condición humana, una expresión única de emociones, pensamientos y percepciones que trasciende las barreras del lenguaje. Desde las pinturas rupestres de las cavernas prehistóricas hasta las instalaciones digitales interactivas de la era moderna, el arte ha evolucionado como testimonio de nuestra capacidad creativa infinita. Cada movimiento artístico, cada técnica nueva, cada obra maestra representa un momento específico en la historia de la humanidad, capturando no solo la estética de su tiempo sino también los valores, preocupaciones y aspiraciones de las sociedades que lo crearon.
+        </p>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800" alt="Arte" class="content-image">
+            </div>
+            <div class="col-md-6">
+                <p class="content-paragraph">
+                    La creatividad no es un don exclusivo de los artistas profesionales, sino una capacidad inherente a todos los seres humanos. Cada persona posee la habilidad única de ver el mundo desde una perspectiva diferente y expresar esa visión de manera original. La creatividad florece cuando permitimos que nuestra imaginación explore sin restricciones, cuando combinamos ideas aparentemente no relacionadas y cuando tenemos el coraje de tomar riesgos estéticos o conceptuales. Este proceso creativo no solo enriquece nuestras vidas personales sino que también contribuye al desarrollo cultural de nuestra sociedad.
+                </p>
+            </div>
+        </div>
+
+        <div class="progress mb-4" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                Expresión Artística: 75%
+            </div>
+        </div>
+
+        <div class="text-center mb-4">
+            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800" alt="Creatividad" class="content-image">
+        </div>
+
+        <p class="content-paragraph">
+            El impacto del arte en la sociedad moderna es profundo y multifacético. Más allá de su valor estético, el arte desempeña roles cruciales como herramienta de comunicación, catalizador de cambio social y medio de preservación cultural. Los museos, galerías y espacios públicos dedicados al arte sirven como puntos de encuentro donde personas de diversos orígenes pueden compartir experiencias y reflexiones. Además, el arte digital y los nuevos medios han abierto posibilidades sin precedentes para la creación y distribución artística, permitiendo que el arte llegue a audiencias globales de manera instantánea.
+        </p>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <p class="content-paragraph">
+                    La educación artística es fundamental para el desarrollo integral de los individuos, especialmente en las etapas tempranas de la vida. Cuando los niños y jóvenes participan en actividades artísticas, no solo aprenden técnicas específicas sino que también desarrollan habilidades de pensamiento crítico, resolución de problemas y empatía. El arte enseña que no hay respuestas incorrectas, solo diferentes formas de ver y expresar la realidad. Esta mentalidad abierta y creativa es invaluable en un mundo que requiere soluciones innovadoras para desafíos complejos.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?w=800" alt="Arte digital" class="content-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
